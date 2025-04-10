@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        calistoga: ['Calistoga', 'cursive'],
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    screens: {
+                        'xs': '0px',
+                        'md': '600px',
+                        'lg': '1024px',
+                    },
+                },
+            },
+            plugins: [],
+        }
+    </script>
+
+</head>
+
+<body class="relative overflow-hidden">
+    <div class="">
+        <img class="absolute -left-[15rem] -top-[10rem] md:-left-[20rem] md:-top-[12rem] rotate-45 w-[800px] z-1 blur-[0px] md:blur-"
+            src="./assets/imgs/carne.png" alt="">
+        <img class="absolute -right-[12rem] top-[20rem] md:-right-[20rem] md:top-[18rem] rotate-45 w-[900px] z-1 blur-[0px] md:blur-"
+            src="./assets/imgs/frango.png" alt="">
+        <img class="absolute -left-[12rem] -bottom-[8rem] md:-left-[20rem] md:-bottom-[10rem] -rotate-45 w-[900px] z-1 blur-[0px] md:blur-"
+            src="./assets/imgs/bacon.png" alt="">
+    </div>
+
+
+    <!-- container pai -->
+    <div class="relative p-8 md:flex md:flex-col md:items-center z-10">
+        <div class="text-center mb-[5rem]">
+            <h1 class="text-[4rem] font-regular font-calistoga text-[#FFEF75]">NOGUEIRA</h1>
+            <p class="font-inter text-[1.4rem] text-white">LANCHES ARTESANAIS</p>
+        </div>
+
+        <ul class="flex flex-col items-center gap-8 md:w-1/2 md:flex">
+            <li class="w-2/3 md:w-full lg:w-1/2">
+                <a href="https://wa.me/5513991727335?text=Oi%2C+quero+pedir+um+lanche+🍔" target="_blank"
+                    class="shadow-2xl block border-white text-[1.4rem] text-white bg-white/30 hover:bg-white/50 duration-200 transition-all backdrop-blur-[5px] p-4 text-center rounded-[1.8rem]">
+                    Whatsapp
+                </a>
+            </li>
+            <li class="w-2/3 md:w-full lg:w-1/2">
+                <a href="https://www.ifood.com.br/delivery/mongagua-sp/nogueira---lanches-artesanais-balneario-oceanopolis/dca58db4-8e69-405e-a85f-579f399fb71c"
+                    target="_blank"
+                    class="shadow-2xl block border-white text-[1.4rem] text-white bg-white/30 hover:bg-white/50 duration-200 transition-all backdrop-blur-[5px] p-4 text-center rounded-[1.8rem]">
+                    Ifood
+                </a>
+            </li>
+            <li class="w-2/3 md:w-full lg:w-1/2">
+                <a href="#"
+                    class="shadow-2xl block border-white text-[1.4rem] text-white bg-white/30 hover:bg-white/50 duration-200 transition-all backdrop-blur-[5px] p-4 text-center rounded-[1.8rem]">
+                    Cardápio
+                </a>
+            </li>
+            <li class="w-2/3 md:w-full lg:w-1/2">
+                <a href="https://www.instagram.com/nogueiralanchesartesanais/" target="_blank"
+                    class="shadow-2xl block border-white text-[1.4rem] text-white bg-white/30 hover:bg-white/50 duration-200 transition-all backdrop-blur-[5px] p-4 text-center rounded-[1.8rem]">
+                    Instagram
+                </a>
+            </li>
+        </ul>
+
+
+
+    </div>
+
+</body>
+
+</html>
