@@ -8,3 +8,44 @@ img {
     width: 100%;
 }
 
+body {
+    background-image: url('../imgs/bg5.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0) rotate(45deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(45deg);
+    }
+    100% {
+      transform: translateY(0) rotate(45deg);
+    }
+  }
+
+  @keyframes floatReverse {
+    0% {
+      transform: translateY(0) rotate(-45deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(-45deg);
+    }
+    100% {
+      transform: translateY(0) rotate(-45deg);
+    }
+  }
+
+  .float-up {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .float-up-reverse {
+    animation: floatReverse 4s ease-in-out infinite;
+  }
